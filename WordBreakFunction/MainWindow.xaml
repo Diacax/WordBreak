@@ -1,0 +1,26 @@
+﻿<Window x:Name="ttlTitle" x:Class="WordBreakFunction.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WordBreakFunction"
+        mc:Ignorable="d"
+        Title="Word Break Function" Height="350" Width="525">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="#FFD2FBFF"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblWordBreak" Content="Words To Break" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="106" Background="#FFB3CEDE"/>
+        <TextBox x:Name="txtWordList" HorizontalAlignment="Left" Height="23" Margin="10,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="488" Background="#FFB3D7D8" TextChanged="txtWordList_TextChanged"/>
+        <TextBlock x:Name="txtblBrokenWords" Margin="10,174,19,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="135" Foreground="White"/>
+        <Button x:Name="btnSubmit" Content="Break Words" HorizontalAlignment="Left" Margin="201,98,0,0" VerticalAlignment="Top" Width="75" Click="btnSubmit_Click"/>
+
+    </Grid>
+</Window>
